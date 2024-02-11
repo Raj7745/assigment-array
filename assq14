@@ -1,0 +1,34 @@
+
+#include<stdio.h>
+#include<conio.h>
+#define size 5
+int main()
+{
+   int arr[size]={0};
+   int i=0;
+   int zcount=0;
+   
+   printf(" enter array %d elements\n",size);
+   
+   for(i=0 ; i < size ; i++)
+   {
+      printf("Array %d element\n",i+1);
+      scanf("%d",&arr[i]);
+   }
+   printf("\n display elements");
+
+   for(i=0 ; i<size ; i++)
+   {
+    if(arr[i] == 0)
+    {
+      printf(" array zetro (0) element is %d\n",arr[i]);
+      zcount++;
+    }
+    
+    
+    
+   }
+   printf(" zero count of  array is %d\n",zcount);
+   
+   return 0;
+}

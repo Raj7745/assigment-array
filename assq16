@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<conio.h>
+#define size 7
+int main()
+{
+   int arr[size]={0};
+     int i=0;
+     int sum=0;
+   
+   printf("enter array %d elements \n",size);
+   
+   for(i=0 ; i < size ; i++)
+   {
+      printf(" Array %d element \n =",i+1);
+      scanf("%d",&arr[i]);
+   }
+   printf("display elements \n");
+   getch();
+   for(i=0 ; i<size ; i++)
+   {
+     sum=sum+arr[i];
+   }
+   printf("sum of all elements in array is %d\n",sum);
+   return 0;
+}
